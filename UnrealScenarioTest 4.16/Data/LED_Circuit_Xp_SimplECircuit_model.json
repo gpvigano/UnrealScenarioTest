@@ -1,0 +1,359 @@
+{
+    "EnvironmentModel": {
+        "Name": "SimplECircuit",
+        "EntityStateTypes": [
+            {
+                "TypeName": "Electronic Component",
+                "ModelName": "SimplECircuit",
+                "ParentTypeName": "",
+                "DefaultPropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "DefaultValue": "0"
+                    }
+                ],
+                "PossiblePropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    }
+                ],
+                "Links": []
+            },
+            {
+                "TypeName": "Resistor",
+                "ModelName": "SimplECircuit",
+                "ParentTypeName": "Electronic Component",
+                "DefaultPropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "DefaultValue": "0"
+                    }
+                ],
+                "PossiblePropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "PossibleValues": [
+                            "0",
+                            "1",
+                            "2"
+                        ]
+                    }
+                ],
+                "Links": [
+                    "Pin1",
+                    "Pin2"
+                ]
+            },
+            {
+                "TypeName": "LED",
+                "ModelName": "SimplECircuit",
+                "ParentTypeName": "Electronic Component",
+                "DefaultPropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "DefaultValue": "0"
+                    },
+                    {
+                        "PropertyId": "lit up",
+                        "DefaultValue": "false"
+                    }
+                ],
+                "PossiblePropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "PossibleValues": [
+                            "0",
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "PropertyId": "lit up",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    }
+                ],
+                "Links": [
+                    "Anode",
+                    "Cathode"
+                ]
+            },
+            {
+                "TypeName": "Power Supply",
+                "ModelName": "SimplECircuit",
+                "ParentTypeName": "Electronic Component",
+                "DefaultPropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "DefaultValue": "0"
+                    }
+                ],
+                "PossiblePropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "PossibleValues": [
+                            "0",
+                            "1",
+                            "2"
+                        ]
+                    }
+                ],
+                "Links": [
+                    "+",
+                    "-"
+                ]
+            },
+            {
+                "TypeName": "Switch",
+                "ModelName": "SimplECircuit",
+                "ParentTypeName": "Electronic Component",
+                "DefaultPropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "DefaultValue": "false"
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "DefaultValue": "0"
+                    },
+                    {
+                        "PropertyId": "position",
+                        "DefaultValue": "0"
+                    }
+                ],
+                "PossiblePropertyValues": [
+                    {
+                        "PropertyId": "burnt out",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connected",
+                        "PossibleValues": [
+                            "true",
+                            "false"
+                        ]
+                    },
+                    {
+                        "PropertyId": "connections",
+                        "PossibleValues": [
+                            "0",
+                            "1",
+                            "2",
+                            "3"
+                        ]
+                    },
+                    {
+                        "PropertyId": "position",
+                        "PossibleValues": [
+                            "0",
+                            "1"
+                        ]
+                    }
+                ],
+                "Links": [
+                    "In",
+                    "Out0",
+                    "Out1"
+                ]
+            }
+        ],
+        "Roles": [
+            {
+                "RoleName": "Test",
+                "ModelName": "SimplECircuit",
+                "SuccessCondition": {
+                    "EntityConditions": [
+                        {
+                            "EntityId": "LED1",
+                            "PropConditions": [
+                                {
+                                    "Name": "lit up",
+                                    "Operator": "==",
+                                    "Value": "true"
+                                }
+                            ],
+                            "RelConditions": []
+                        }
+                    ],
+                    "RelatedConditions": [
+                        {
+                            "LogicOperator": "and",
+                            "Condition": {
+                                "EntityConditions": [
+                                    {
+                                        "EntityId": "SW1",
+                                        "PropConditions": [
+                                            {
+                                                "Name": "connected",
+                                                "Operator": "==",
+                                                "Value": "true"
+                                            },
+                                            {
+                                                "Name": "position",
+                                                "Operator": "==",
+                                                "Value": "1"
+                                            }
+                                        ],
+                                        "RelConditions": []
+                                    }
+                                ],
+                                "RelatedConditions": []
+                            }
+                        }
+                    ]
+                },
+                "FailureCondition": {
+                    "EntityConditions": [],
+                    "RelatedConditions": []
+                },
+                "DeadlockCondition": {
+                    "EntityConditions": [],
+                    "RelatedConditions": []
+                },
+                "StateReward": {
+                    "ResultReward": {
+                        "IN_PROGRESS": -1,
+                        "SUCCEEDED": 200,
+                        "FAILED": -200,
+                        "DEADLOCK": -10
+                    },
+                    "CumulativeRewards": [
+                        {
+                            "TypeName": "Electronic Component",
+                            "Filter": {
+                                "Name": "connected",
+                                "Operator": "==",
+                                "Value": "true"
+                            },
+                            "Reward": -5
+                        }
+                    ],
+                    "EntityConditionRewards": [
+                        {
+                            "EntityCondition": {
+                                "EntityId": "R2",
+                                "PropConditions": [
+                                    {
+                                        "Name": "connected",
+                                        "Operator": "==",
+                                        "Value": "true"
+                                    }
+                                ],
+                                "RelConditions": []
+                            },
+                            "Reward": -10
+                        },
+                        {
+                            "EntityCondition": {
+                                "EntityId": "LED1",
+                                "PropConditions": [
+                                    {
+                                        "Name": "connected",
+                                        "Operator": "==",
+                                        "Value": "true"
+                                    }
+                                ],
+                                "RelConditions": []
+                            },
+                            "Reward": 10
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

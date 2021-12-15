@@ -1,0 +1,72 @@
+{
+    "Catalog": {
+        "Name": "DefaultCatalog",
+        "Items": [
+            {
+                "Badge": {
+                    "Identifier": "Box00",
+                    "Type": "Box",
+                    "Category": "Box",
+                    "DisplayName": "Box"
+                },
+                "Asset": {
+                    "Uri": "Box",
+                    "AssetType": "Actor",
+                    "Source": "SCENE"
+                }
+            },
+            {
+                "Badge": {
+                    "Identifier": "Cylinder00",
+                    "Type": "Cylinder",
+                    "Category": "Cylinder",
+                    "DisplayName": "Cylinder"
+                },
+                "Asset": {
+                    "Uri": "Cylinder",
+                    "AssetType": "Actor",
+                    "Source": "SCENE"
+                }
+            },
+            {
+                "Badge": {
+                    "Identifier": "Sphere00",
+                    "Type": "Sphere",
+                    "Category": "Sphere",
+                    "DisplayName": "Sphere"
+                },
+                "Asset": {
+                    "Uri": "Sphere",
+                    "AssetType": "Actor",
+                    "Source": "SCENE"
+                }
+            },
+            {
+                "Badge": {
+                    "Identifier": "BoxBP00",
+                    "Type": "BoxBP",
+                    "Category": "Box",
+                    "DisplayName": "Box (BP)"
+                },
+                "Asset": {
+                    "Uri": "BoxBP",
+                    "AssetType": "ActorBP",
+                    "Source": "PROJECT"
+                }
+            },
+            {
+                "Badge": {
+                    "Identifier": "CylinderBP00",
+                    "Type": "CylinderBP",
+                    "Category": "Cylinder",
+                    "DisplayName": "Cylinder (BP)"
+                },
+                "Asset": {
+                    "Uri": "CylinderBP",
+                    "AssetType": "ActorBP",
+                    "Source": "PROJECT"
+                }
+            }
+        ]
+    }
+}

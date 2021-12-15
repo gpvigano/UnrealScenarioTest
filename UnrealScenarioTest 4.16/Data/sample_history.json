@@ -1,0 +1,132 @@
+{
+    "ScenarioHistory": {
+        "Uri": "Test.History",
+        "Name": "Test History",
+        "Description": "",
+        "Details": "",
+        "EntityHistories": [
+            {
+                "Entity": "Box1",
+                "History": {
+                    "States": [
+                        {
+                            "Class": "ElementState",
+                            "StartDateTime": "2013-11-27T09:00:00",
+                            "EndDateTime": "2013-11-27T09:00:02",
+                            "Origin": "SIMULATED",
+                            "LocalTransform": {
+                                "ParentId": "",
+                                "UseCoordSys": true,
+                                "CoordSys": {
+                                    "RightAxis": {
+                                        "Right": 1.0,
+                                        "Forward": 0.0,
+                                        "Up": 0.0
+                                    },
+                                    "ForwardAxis": {
+                                        "Right": 0.0,
+                                        "Forward": 1.0,
+                                        "Up": 0.0
+                                    },
+                                    "UpAxis": {
+                                        "Right": 0.0,
+                                        "Forward": 0.0,
+                                        "Up": 1.0
+                                    },
+                                    "Origin": {
+                                        "Right": 0.0,
+                                        "Forward": 100.0,
+                                        "Up": 0.0
+                                    }
+                                },
+                                "Scale": {
+                                    "Right": 1.0,
+                                    "Forward": 1.0,
+                                    "Up": 1.0
+                                }
+                            },
+                            "Representation": ""
+                        },
+                        {
+                            "Class": "ElementState",
+                            "StartDateTime": "2013-11-27T09:00:05",
+                            "EndDateTime": "2013-11-27T09:00:08",
+                            "Origin": "SIMULATED",
+                            "LocalTransform": {
+                                "ParentId": "",
+                                "UseCoordSys": true,
+                                "CoordSys": {
+                                    "RightAxis": {
+                                        "Right": 1.0,
+                                        "Forward": 0.0,
+                                        "Up": 0.0
+                                    },
+                                    "ForwardAxis": {
+                                        "Right": 0.0,
+                                        "Forward": 1.0,
+                                        "Up": 0.0
+                                    },
+                                    "UpAxis": {
+                                        "Right": 0.0,
+                                        "Forward": 0.0,
+                                        "Up": 1.0
+                                    },
+                                    "Origin": {
+                                        "Right": 300.0,
+                                        "Forward": 100.0,
+                                        "Up": 0.0
+                                    }
+                                },
+                                "Scale": {
+                                    "Right": 1.0,
+                                    "Forward": 1.0,
+                                    "Up": 1.0
+                                }
+                            },
+                            "Representation": ""
+                        },
+                        {
+                            "Class": "ElementState",
+                            "StartDateTime": "2013-11-27T09:00:12",
+                            "EndDateTime": "2013-11-27T09:00:15",
+                            "Origin": "SIMULATED",
+                            "LocalTransform": {
+                                "ParentId": "Cylinder1",
+                                "UseCoordSys": true,
+                                "CoordSys": {
+                                    "RightAxis": {
+                                        "Right": 1.0,
+                                        "Forward": 0.0,
+                                        "Up": 0.0
+                                    },
+                                    "ForwardAxis": {
+                                        "Right": 0.0,
+                                        "Forward": 0.0,
+                                        "Up": -1.0
+                                    },
+                                    "UpAxis": {
+                                        "Right": 0.0,
+                                        "Forward": 1.0,
+                                        "Up": 0.0
+                                    },
+                                    "Origin": {
+                                        "Right": 0.0,
+                                        "Forward": 0.0,
+                                        "Up": 0.0
+                                    }
+                                },
+                                "Scale": {
+                                    "Right": 1.0,
+                                    "Forward": 1.0,
+                                    "Up": 1.0
+                                }
+                            },
+                            "Representation": ""
+                        }
+                    ]
+                }
+            }
+        ],
+        "Events": []
+    }
+}

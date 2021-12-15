@@ -1,0 +1,522 @@
+{
+    "Scenario": {
+        "Name": "LED scenario",
+        "Entities": [
+            {
+                "Class": "Element",
+                "Identifier": "SW1",
+                "Type": "Switch",
+                "Category": "Switch",
+                "Description": "PCB Switch",
+                "Configuration": "12000 40",
+                "Asset": {
+                    "Uri": "SwitchPCB",
+                    "AssetType": "Switch",
+                    "Source": "PROJECT",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 0.86603,
+                            "Forward": 0.49997,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": -0.49997,
+                            "Forward": 0.86603,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -2.83297,
+                            "Forward": -3.50239,
+                            "Up": 2.98303
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "Out0",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "ForwardAxis": {
+                                "Right": -0.49997,
+                                "Forward": 0.86603,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.86603,
+                                "Forward": 0.49997,
+                                "Up": 0.0
+                            },
+                            "Origin": {
+                                "Right": -317.93957,
+                                "Forward": -370.23901,
+                                "Up": 268.303
+                            }
+                        }
+                    },
+                    {
+                        "Id": "In",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "ForwardAxis": {
+                                "Right": -0.49997,
+                                "Forward": 0.86603,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.86603,
+                                "Forward": 0.49997,
+                                "Up": 0.0
+                            },
+                            "Origin": {
+                                "Right": -283.298,
+                                "Forward": -350.23999,
+                                "Up": 268.303
+                            }
+                        }
+                    },
+                    {
+                        "Id": "Out1",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "ForwardAxis": {
+                                "Right": -0.49997,
+                                "Forward": 0.86603,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.86603,
+                                "Forward": 0.49997,
+                                "Up": 0.0
+                            },
+                            "Origin": {
+                                "Right": -248.65643,
+                                "Forward": -330.24096,
+                                "Up": 268.303
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Battery",
+                "Type": "PowerSupplyDC",
+                "Category": "Power Supply",
+                "Description": "Battery 6V 50mA",
+                "Configuration": "6000 50",
+                "Asset": {
+                    "Uri": "Battery6V",
+                    "AssetType": "PowerSupplyDC",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": -1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 0.14429,
+                            "Forward": -4.0,
+                            "Up": 0.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "-",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "ForwardAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "Origin": {
+                                "Right": 115.72814,
+                                "Forward": -309.00494,
+                                "Up": 0.08239
+                            }
+                        }
+                    },
+                    {
+                        "Id": "+",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "ForwardAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "Origin": {
+                                "Right": -84.27184,
+                                "Forward": -309.00497,
+                                "Up": 0.08239
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "Class": "Element",
+                "Identifier": "R2",
+                "Type": "Resistor",
+                "Category": "Resistor",
+                "Description": "Resistor 51 Ohm 1/4W",
+                "Configuration": "50 250",
+                "Asset": {
+                    "Uri": "R50",
+                    "AssetType": "Resistor",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 0.25878,
+                            "Forward": -0.96593,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.96593,
+                            "Forward": 0.25878,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 2.13487,
+                            "Forward": -4.65327,
+                            "Up": 2.13607
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.1,
+                        "Forward": 0.1,
+                        "Up": 0.1
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "Pin1",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.25878,
+                                "Forward": -0.96593,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.96593,
+                                "Forward": 0.25878,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 262.82733,
+                                "Forward": -452.41986,
+                                "Up": 239.60684
+                            }
+                        }
+                    },
+                    {
+                        "Id": "Pin2",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.25878,
+                                "Forward": -0.96593,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.96593,
+                                "Forward": 0.25878,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 163.33595,
+                                "Forward": -479.0744,
+                                "Up": 239.60684
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "Class": "Element",
+                "Identifier": "LED1",
+                "Type": "LED",
+                "Category": "LED",
+                "Description": "Red LED",
+                "Configuration": "Red",
+                "Asset": {
+                    "Uri": "LED_Red",
+                    "AssetType": "LED",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 0.00167,
+                            "Forward": -3.31608,
+                            "Up": 3.50253
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "Cathode",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "Origin": {
+                                "Right": 13.16784,
+                                "Forward": -331.60806,
+                                "Up": 224.25334
+                            }
+                        }
+                    },
+                    {
+                        "Id": "Anode",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "Origin": {
+                                "Right": -11.83215,
+                                "Forward": -331.60806,
+                                "Up": 204.25331
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "Class": "Element",
+                "Identifier": "R1",
+                "Type": "Resistor",
+                "Category": "Resistor",
+                "Description": "Resistor 2.2 kOhm 1/2W",
+                "Configuration": "2200 500",
+                "Asset": {
+                    "Uri": "R2200",
+                    "AssetType": "Resistor",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 0.50001,
+                            "Forward": 0.86601,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.86601,
+                            "Forward": -0.50001,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": -1.0
+                        },
+                        "Origin": {
+                            "Right": 2.43193,
+                            "Forward": -2.5074,
+                            "Up": 3.47533
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.1,
+                        "Forward": 0.1,
+                        "Up": 0.1
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "Pin1",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.50001,
+                                "Forward": 0.86601,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.86601,
+                                "Forward": -0.50001,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "Origin": {
+                                "Right": 302.23217,
+                                "Forward": -284.4811,
+                                "Up": 315.5332
+                            }
+                        }
+                    },
+                    {
+                        "Id": "Pin2",
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 0.50001,
+                                "Forward": 0.86601,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.86601,
+                                "Forward": -0.50001,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": -1.0
+                            },
+                            "Origin": {
+                                "Right": 184.45385,
+                                "Forward": -216.47929,
+                                "Up": 315.5332
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,282 @@
+{
+    "Scenario": {
+        "Name": "TestData",
+        "Entities": [
+            {
+                "Class": "Element",
+                "Identifier": "Sphere1",
+                "Type": "Primitive",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Source": "SCENE",
+                    "Catalog": "",
+                    "AssetType": "Actor",
+                    "Uri": "Sphere",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 0.0,
+                            "Forward": 100.0,
+                            "Up": 10.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Box1",
+                "Type": "Primitive",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Source": "SCENE",
+                    "Catalog": "",
+                    "AssetType": "Actor",
+                    "Uri": "Box",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 0.0,
+                            "Forward": 100.0,
+                            "Up": 100.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Box2",
+                "Type": "Primitive",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Source": "SCENE",
+                    "Catalog": "",
+                    "AssetType": "Actor",
+                    "Uri": "Box",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 100.0,
+                            "Forward": 100.0,
+                            "Up": 100.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Box3",
+                "Type": "Primitive",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Source": "PROJECT",
+                    "Catalog": "",
+                    "AssetType": "Actor",
+                    "Uri": "BoxBP",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 100.0,
+                            "Forward": 100.0,
+                            "Up": 150.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.25,
+                        "Forward": 0.25,
+                        "Up": 0.25
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Cylinder1",
+                "Type": "Primitive",
+                "Category": "Test",
+                "Description": "",
+                "Asset": {
+                    "Source": "SCENE",
+                    "Catalog": "",
+                    "AssetType": "Blueprint",
+                    "Uri": "Cylinder",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -100.0,
+                            "Forward": 100.0,
+                            "Up": 100.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Cylinder2",
+                "Type": "Primitive",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Source": "PROJECT",
+                    "Catalog": "",
+                    "AssetType": "Blueprint",
+                    "Uri": "CylinderBP",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -100.0,
+                            "Forward": 100.0,
+                            "Up": 150.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.25,
+                        "Forward": 0.25,
+                        "Up": 0.25
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,166 @@
+{
+    "Catalog": {
+        "Name": "Electronic Components",
+        "Items": [
+            {
+                "Badge": {
+                    "Identifier": "Battery6V",
+                    "Type": "PowerSupplyDC",
+                    "Category": "Power Supply",
+                    "DisplayName": "Battery 6V",
+                    "Icon": "Battery6V_Icon",
+                    "Description": "Battery 6V 50mA"
+                },
+                "Asset": {
+                    "Uri": "Battery6V",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": ""
+                },
+                "FirstOne": true,
+                "AllowedInstances": 1,
+                "Hidden": false
+            },
+            {
+                "Badge": {
+                    "Identifier": "SwitchPCB",
+                    "Type": "PCB Switch",
+                    "Category": "Switch",
+                    "DisplayName": "PCB Switch",
+                    "Icon": "SwitchPCB_Icon",
+                    "Description": "PCB Switch"
+                },
+                "Asset": {
+                    "Uri": "SwitchPCB",
+                    "AssetType": "ActorBP",
+                    "Source": "PROJECT",
+                    "PartId": ""
+                },
+                "FirstOne": false,
+                "Hidden": false
+            },
+            {
+                "Badge": {
+                    "Identifier": "R2200",
+                    "Type": "Resistor",
+                    "Category": "Resistor",
+                    "DisplayName": "Resistor 2.2 kOhm",
+                    "Icon": "R2200_Icon",
+                    "Description": "Resistor 2.2 kOhm 1/2W"
+                },
+                "Asset": {
+                    "Uri": "R2200",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": ""
+                },
+                "FirstOne": false,
+                "Hidden": false
+            },
+            {
+                "Badge": {
+                    "Identifier": "R50",
+                    "Type": "Resistor",
+                    "Category": "Resistor",
+                    "DisplayName": "Resistor 51 Ohm",
+                    "Icon": "R50_Icon",
+                    "Description": "Resistor 51 Ohm 1/4W"
+                },
+                "Asset": {
+                    "Uri": "R50",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": ""
+                },
+                "FirstOne": false,
+                "Hidden": false
+            },
+            {
+                "Badge": {
+                    "Identifier": "LED_Red",
+                    "Type": "LED",
+                    "Category": "LED",
+                    "DisplayName": "Red LED",
+                    "Icon": "LED_Red_Icon",
+                    "Description": "Red LED"
+                },
+                "Asset": {
+                    "Uri": "LED_Red",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": ""
+                },
+                "FirstOne": false,
+                "Hidden": false
+            },
+            {
+                "Badge": {
+                    "Identifier": "LED_Green",
+                    "Type": "LED",
+                    "Category": "LED",
+                    "DisplayName": "Green LED",
+                    "Icon": "LED_Green_Icon",
+                    "Description": "Green LED"
+                },
+                "Asset": {
+                    "Uri": "LED_Green",
+                    "AssetType": "BP",
+                    "Source": "PROJECT",
+                    "PartId": ""
+                },
+                "FirstOne": false,
+                "Hidden": false
+            },
+            {
+                "Badge": {
+                    "Identifier": "LED_Blue",
+                    "Type": "LED",
+                    "Category": "LED",
+                    "DisplayName": "Blue LED",
+                    "Icon": "LED_Blue_Icon",
+                    "Description": "Blue LED (20mA)"
+                },
+                "Asset": {
+                    "Uri": "LED_Blue",
+                    "AssetType": "BP",
+                    "Source": "PROJECT",
+                    "PartId": ""
+                },
+                "FirstOne": false,
+                "Hidden": false
+            },
+            {
+                "Badge": {
+                    "Identifier": "LED_Yellow",
+                    "Type": "LED",
+                    "Category": "LED",
+                    "DisplayName": "Yellow LED",
+                    "Icon": "LED_Yellow_Icon",
+                    "Description": "Yellow LED"
+                },
+                "Asset": {
+                    "Uri": "LED_Yellow",
+                    "AssetType": "BP",
+                    "Source": "PROJECT",
+                    "PartId": ""
+                },
+                "FirstOne": false,
+                "Hidden": false
+            }
+        ],
+        "CategoryAbbreviations": [
+          [
+            "Power Supply",
+            "F"
+          ],
+          [
+            "Resistor",
+            "R"
+          ],
+          [
+            "Switch",
+            "SW"
+          ]
+        ]
+    }
+}

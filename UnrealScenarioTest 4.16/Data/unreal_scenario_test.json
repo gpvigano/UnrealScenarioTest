@@ -1,0 +1,1033 @@
+{
+    "Scenario": {
+        "Name": "TestData",
+        "Entities": [
+            {
+                "Class": "Element",
+                "Identifier": "Sphere1",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "Sphere",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 0.0,
+                            "Forward": 524.0,
+                            "Up": 10.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Box1",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "Box",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -0.14169,
+                            "Forward": 390.15124,
+                            "Up": 99.44052
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Box2",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "Box",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 100.0,
+                            "Forward": 573.0,
+                            "Up": 282.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Box3",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "BoxBP",
+                    "AssetType": "Actor",
+                    "Source": "PROJECT",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 100.0,
+                            "Forward": 628.0,
+                            "Up": 150.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.25,
+                        "Forward": 0.25,
+                        "Up": 0.25
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Cylinder1",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "Cylinder",
+                    "AssetType": "Blueprint",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -623.54986,
+                            "Forward": 388.09411,
+                            "Up": -154.20002
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Cylinder2",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "CylinderBP",
+                    "AssetType": "Blueprint",
+                    "Source": "PROJECT",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -100.0,
+                            "Forward": 665.0,
+                            "Up": 150.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.25,
+                        "Forward": 0.25,
+                        "Up": 0.25
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "ElemSocket1",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "ConnEntity1",
+                    "AssetType": "Scene",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": -1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": -1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -847.17224,
+                            "Forward": -491.20117,
+                            "Up": 110.60967
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "SocketLeft",
+                        "Type": "Left",
+                        "Compatibility": [
+                            "Right"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": -1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": -718.1723,
+                                "Forward": -491.2012,
+                                "Up": 110.60967
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketTop",
+                        "Type": "Top",
+                        "Compatibility": [
+                            "Bottom"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": -1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": -847.17224,
+                                "Forward": -491.20117,
+                                "Up": 241.60968
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketBottom",
+                        "Type": "Bottom",
+                        "Compatibility": [
+                            "Top"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": -1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": -847.17224,
+                                "Forward": -491.20117,
+                                "Up": -18.39032
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketRight",
+                        "Type": "Right",
+                        "Compatibility": [
+                            "Left"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": -1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": -976.17218,
+                                "Forward": -491.20114,
+                                "Up": 110.60967
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "Class": "Element",
+                "Identifier": "ElemSocket2",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "ConnEntity1",
+                    "AssetType": "Scene",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 598.43701,
+                            "Forward": -392.64297,
+                            "Up": -101.35121
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "SocketLeft",
+                        "Type": "Left",
+                        "Compatibility": [
+                            "Right"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 469.43701,
+                                "Forward": -392.64297,
+                                "Up": -101.35121
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketTop",
+                        "Type": "Top",
+                        "Compatibility": [
+                            "Bottom"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 598.43701,
+                                "Forward": -392.64297,
+                                "Up": 29.64878
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketBottom",
+                        "Type": "Bottom",
+                        "Compatibility": [
+                            "Top"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 598.43701,
+                                "Forward": -392.64297,
+                                "Up": -230.35121
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketRight",
+                        "Type": "Right",
+                        "Compatibility": [
+                            "Left"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 727.43701,
+                                "Forward": -392.64297,
+                                "Up": -101.35121
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "Class": "ConnectionElement",
+                "Identifier": "PipelineActor1",
+                "Type": "Metal pipeline",
+                "Category": "Pipeline",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "PipelineActor1",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 0.98382,
+                            "Forward": 0.94774,
+                            "Up": 86.99996
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                },
+                "ConnectionPath": [
+                    {
+                        "ElementId": "ElemSocket1",
+                        "SocketId": "SocketTop",
+                        "Offset": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        }
+                    },
+                    {
+                        "Offset": {
+                            "Right": -843.11303,
+                            "Forward": -489.51684,
+                            "Up": 438.09411
+                        }
+                    },
+                    {
+                        "Offset": {
+                            "Right": -739.41442,
+                            "Forward": 1110.95385,
+                            "Up": 438.09411
+                        }
+                    },
+                    {
+                        "Offset": {
+                            "Right": 577.82519,
+                            "Forward": 1110.95385,
+                            "Up": 411.87954
+                        }
+                    },
+                    {
+                        "Offset": {
+                            "Right": 577.82519,
+                            "Forward": -391.91748,
+                            "Up": 411.87954
+                        }
+                    },
+                    {
+                        "ElementId": "ElemSocket2",
+                        "SocketId": "SocketTop",
+                        "Offset": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        }
+                    }
+                ]
+            },
+            {
+                "Class": "Element",
+                "Identifier": "ElemSocket2_001",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "ConnEntity1",
+                    "AssetType": "Scene",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": -1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": -1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -264.8825,
+                            "Forward": -418.07717,
+                            "Up": -103.66224
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "SocketLeft",
+                        "Type": "Left",
+                        "Compatibility": [
+                            "Right"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": -1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": -135.88256,
+                                "Forward": -418.07727,
+                                "Up": -103.66224
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketTop",
+                        "Type": "Top",
+                        "Compatibility": [
+                            "Bottom"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": -1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": -264.8825,
+                                "Forward": -418.07717,
+                                "Up": 27.33775
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketBottom",
+                        "Type": "Bottom",
+                        "Compatibility": [
+                            "Top"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": -1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": -264.8825,
+                                "Forward": -418.07717,
+                                "Up": -232.66224
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketRight",
+                        "Type": "Right",
+                        "Compatibility": [
+                            "Left"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": -1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": -1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": -393.88244,
+                                "Forward": -418.07708,
+                                "Up": -103.66224
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "Class": "Element",
+                "Identifier": "ElemSocket2_002",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "ConnEntity1",
+                    "AssetType": "Scene",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 173.63079,
+                            "Forward": -318.194,
+                            "Up": -142.40586
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                },
+                "Sockets": [
+                    {
+                        "Id": "SocketLeft",
+                        "Type": "Left",
+                        "Compatibility": [
+                            "Right"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 44.63079,
+                                "Forward": -318.194,
+                                "Up": -142.40586
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketTop",
+                        "Type": "Top",
+                        "Compatibility": [
+                            "Bottom"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 173.63079,
+                                "Forward": -318.194,
+                                "Up": -11.40586
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketBottom",
+                        "Type": "Bottom",
+                        "Compatibility": [
+                            "Top"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 173.63079,
+                                "Forward": -318.194,
+                                "Up": -271.40588
+                            }
+                        }
+                    },
+                    {
+                        "Id": "SocketRight",
+                        "Type": "Right",
+                        "Compatibility": [
+                            "Left"
+                        ],
+                        "Location": {
+                            "RightAxis": {
+                                "Right": 1.0,
+                                "Forward": 0.0,
+                                "Up": 0.0
+                            },
+                            "ForwardAxis": {
+                                "Right": 0.0,
+                                "Forward": 1.0,
+                                "Up": 0.0
+                            },
+                            "UpAxis": {
+                                "Right": 0.0,
+                                "Forward": 0.0,
+                                "Up": 1.0
+                            },
+                            "Origin": {
+                                "Right": 302.63079,
+                                "Forward": -318.194,
+                                "Up": -142.40586
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "Scenario": {
+        "Name": "TestData",
+        "Entities": [
+            {
+                "Class": "Element",
+                "Identifier": "Sphere1",
+                "Type": "",
+                "Category": "Test",
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Uri": "Sphere",
+                    "AssetType": "Actor",
+                    "Source": "SCENE",
+                    "PartId": "",
+                    "Catalog": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 500.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 1.0,
+                        "Forward": 1.0,
+                        "Up": 1.0
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "EnvironmentModelKnowledge": {
+        "Name": "SimplECircuit",
+        "RolesKnowledge": [
+            {
+                "ModelName": "SimplECircuit",
+                "RoleName": "Test"
+            }
+        ]
+    }
+}
