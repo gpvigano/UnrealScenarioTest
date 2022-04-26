@@ -56,7 +56,7 @@ The virtual environment can work in two modes: with or without updating the stor
 The latter mode allow to start an automatic training to improve the system experience, using the reinforcement learning agent provided by the framework. While the agent is performing actions, the results are visualized in real time in the virtual environment. The process continues until the user stops it, starting a new episode each time success or failure conditions are met. Optionally the user can choose to stop the process at the next successful episode.
 
 ## Implementation
-This virtual environment was developed under Windows platform with [Unreal Engine 4] (UE4.16) and [Visual Studio] 2015 (VS2015), but should be compatible with newer versions (tested with UE4.27/VS2017), anyway tests and changes are planned to make it compatible with newer versions (see [Documentation](#documentation) for details). 
+This virtual environment was developed under Windows platform with [Unreal Engine 4] (UE4.16) and [Visual Studio] 2015 (VS2015), but should be compatible with newer versions (tested with UE4.27/VS2017 and UE5.0/VS2019), anyway tests and changes are planned to make it compatible with newer versions (see [Documentation](#documentation) for details). 
 
 The proposed implementation consists of a function library for generic utility functions and a set of *actors* and *components* for the integration with the main Digital Scenario Framework library (*DiScenFw*).
 The sample scenes included in the test project are Unreal maps with their related assets.

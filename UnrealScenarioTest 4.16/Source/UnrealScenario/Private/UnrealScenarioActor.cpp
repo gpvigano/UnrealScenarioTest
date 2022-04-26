@@ -3,13 +3,15 @@
 #include "UnrealScenarioActor.h"
 
 #include "Misc/Paths.h" // FPaths
-#include "Runtime/Launch/Resources/Version.h" // ENGINE_MINOR_VERSION
+#include "Runtime/Launch/Resources/Version.h" // ENGINE_MAJOR_VERSION, ENGINE_MINOR_VERSION
 #include "Runtime/Engine/Public/UnrealClient.h" // FScreenshotRequest
 #include "Runtime/Engine/Public/EngineUtils.h" // TActorIterator
 #include "Runtime/Engine/Classes/Engine/PostProcessVolume.h"
 #include "Engine/World.h" // GetWorld()
 #include "GameFramework/PlayerController.h"
+#if WITH_EDITOR
 #include "Engine/Selection.h" // USelection
+#endif
 
 #include "UEUtil.h"
 #include "UScenUtil.h"
@@ -661,7 +663,7 @@ FString AUnrealScenarioActor::ScenarioDir()
 {
 	//#if WITH_EDITOR
 
-#if ENGINE_MINOR_VERSION > 20
+#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 20
 	FString projectPath = FPaths::ProjectDir() + "Data/";
 #else
 	FString projectPath = FPaths::GameDir() + "Data/";
@@ -915,24 +917,6 @@ void AUnrealScenarioActor::InitDigitalScenarioFramework()
 	//};
 	bUnrealScenarioInitialized = true;
 }
-
-
-#if WITH_EDITOR
-void AUnrealScenarioActor::OnSelectionChanged(UObject* Object)
-{
-	USelection* selection = Cast<USelection>(Object);
-	if (selection)
-	{
-		AActor* selectedActor = Cast<AActor>(selection->GetSelectedObject(0));
-		AActor* selectedEntity = SelectEntityFromActor(selectedActor);
-		UEntityDataComponent* entityComponent = UUScenUtil::GetEntityData(selectedEntity);
-		if (entityComponent)
-		{
-			UE_LOG(LogTemp, Display, TEXT("Entity %s selected"), *(entityComponent->Identifier));
-		}
-	}
-}
-#endif
 
 
 AActor* AUnrealScenarioActor::CreateEntityFromActor(FString assetId, FString entityName, AActor * parentActor)
@@ -1275,7 +1259,7 @@ void AUnrealScenarioActor::SetActorSelectable(AActor* actor, bool includeAttache
 						primComp->OnComponentHit.AddDynamic(this, &AUnrealScenarioActor::OnHit);
 						primComp->OnComponentBeginOverlap.AddDynamic(this, &AUnrealScenarioActor::OnOverlapBegin);
 						primComp->OnComponentEndOverlap.AddDynamic(this, &AUnrealScenarioActor::OnOverlapEnd);
-#if ENGINE_MINOR_VERSION > 16
+#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 16
 						primComp->SetGenerateOverlapEvents(true);
 #else
 						primComp->bGenerateOverlapEvents = true;
@@ -2110,7 +2094,7 @@ void AUnrealScenarioActor::LerpActorTransform(
 		}
 		FTransform actorTransform1 = parentActor1 ? parentActor1->GetActorTransform() : ScenarioActor->GetActorTransform();
 		FTransform actorTransform2 = parentActor2 ? parentActor2->GetActorTransform() : ScenarioActor->GetActorTransform();
-		//#if ENGINE_MINOR_VERSION > 17
+		//#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 17
 		//		elemRot1 = actorTransform1.TransformRotation(elemRot1.Quaternion()).Rotator();
 		//		elemRot2 = actorTransform2.TransformRotation(elemRot2.Quaternion()).Rotator();
 		//#else
@@ -2305,7 +2289,7 @@ void AUnrealScenarioActor::UpdateElementTransform(AActor* elemActor, std::shared
 		FRotator actorRot = elemActor->GetActorRotation();
 		FVector elemEuler = actorRot.Euler();
 		//discenfw::Vector3D elemRotVec = ExportVector(elemEuler);
-		discenfw::Vector3D elemRotVec = { elemEuler.X, elemEuler.Y, elemEuler.Z };
+		discenfw::Vector3D elemRotVec = { (float)elemEuler.X, (float)elemEuler.Y, (float)elemEuler.Z };
 		elem->GetTransform3D().EulerAngles = elemRotVec;
 		// TODO: rotation matrix
 		elem->GetTransform3D().UseCoordSys = true;
@@ -2323,7 +2307,7 @@ void AUnrealScenarioActor::UpdateElementTransform(AActor* elemActor, std::shared
 
 discenfw::Vector3D AUnrealScenarioActor::ExportVector(const FVector& vec)
 {
-	return{ vec.Y, vec.X, vec.Z };
+	return { (float)vec.Y, (float)vec.X, (float)vec.Z };
 }
 
 

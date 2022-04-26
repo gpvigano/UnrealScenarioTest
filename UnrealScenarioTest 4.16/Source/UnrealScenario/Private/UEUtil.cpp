@@ -11,8 +11,8 @@
 #include "GameFramework/PlayerController.h"
 #include "Components/MaterialBillboardComponent.h"
 
-#include "Runtime/Launch/Resources/Version.h" // ENGINE_MINOR_VERSION
-#if ENGINE_MINOR_VERSION < 25
+#include "Runtime/Launch/Resources/Version.h" // ENGINE_MAJOR_VERSION, ENGINE_MINOR_VERSION
+#if ENGINE_MAJOR_VERSION < 5 && ENGINE_MINOR_VERSION < 25
 #define FProperty UProperty
 #define FStructProperty UStructProperty
 #define FObjectProperty UObjectProperty
@@ -25,7 +25,7 @@ Logger UUEUtil::Log;
 void UUEUtil::GetActorComponents(AActor* Actor, TArray<UActorComponent*>& ActorComponents, TSubclassOf<UActorComponent> ActorComponentClass)
 {
 	ActorComponents.Empty();
-#if ENGINE_MINOR_VERSION > 23
+#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 23
 	Actor->GetComponents(ActorComponentClass, ActorComponents);
 #else
 	ActorComponents = Actor->GetComponentsByClass(ActorComponentClass);
@@ -250,7 +250,7 @@ bool UUEUtil::SetActorVectorProperty(AActor* ExistingActor, FName PropertyName, 
 	void* ValuePtr = posProp->ContainerPtrToValuePtr<void>(ExistingActor);
 
 	// Ensure this property is a struct
-#if ENGINE_MINOR_VERSION < 25
+#if ENGINE_MAJOR_VERSION < 5 && ENGINE_MINOR_VERSION < 25
 	UStructProperty* posStructProp = Cast<UStructProperty>(posProp);
 #else
 	FStructProperty* posStructProp = CastField<FStructProperty>(posProp);
@@ -274,7 +274,7 @@ bool UUEUtil::SetActorSceneCompProperty(AActor* ExistingActor, FName PropertyNam
 	FProperty *posProp = ExistingActor->GetClass()->FindPropertyByName(PropertyName);
 	void* ValuePtr = posProp->ContainerPtrToValuePtr<void>(ExistingActor);
 
-#if ENGINE_MINOR_VERSION < 25
+#if ENGINE_MAJOR_VERSION < 5 && ENGINE_MINOR_VERSION < 25
 	FObjectProperty* sceneCompProp = Cast<FObjectProperty>(posProp);
 #else
 	FObjectProperty* sceneCompProp = CastField<FObjectProperty>(posProp);
@@ -293,7 +293,7 @@ USceneComponent* UUEUtil::GetActorSceneCompProperty(AActor* ExistingActor, FName
 	//FProperty *posProp = ExistingActor->GetClass()->FindPropertyByName(PropertyName);
 	//void* ValuePtr = posProp->ContainerPtrToValuePtr<void>(ExistingActor);
 
-#if ENGINE_MINOR_VERSION < 25
+#if ENGINE_MAJOR_VERSION < 5 && ENGINE_MINOR_VERSION < 25
 	UObjectProperty* sceneCompProp = FindField<UObjectProperty>(ExistingActor->GetClass(), PropertyName);
 	//UObjectProperty* sceneCompProp = Cast<UObjectProperty>(posProp);
 #else
@@ -331,7 +331,7 @@ bool UUEUtil::SetActorVisible(AActor* ExistingActor, bool Visible, bool AffectCh
 		UPrimitiveComponent* primComp = CastChecked<UPrimitiveComponent>(actorComponents[i],ECastCheckedType::NullAllowed);
 		if (primComp)
 		{
-#if ENGINE_MINOR_VERSION < 25
+#if ENGINE_MAJOR_VERSION < 5 && ENGINE_MINOR_VERSION < 25
 			primComp->bVisible = Visible;
 #else
 			primComp->SetVisibility(Visible);
@@ -394,7 +394,7 @@ bool UUEUtil::SetActorActive(AActor* ExistingActor, bool Active, bool AffectRend
 
 bool UUEUtil::GetActorVisible(AActor* ExistingActor)
 {
-#if ENGINE_MINOR_VERSION > 23
+#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 23
 	return !ExistingActor->IsHidden();// && ...HiddenInGame?
 #else
 	return !ExistingActor->bHidden;
@@ -433,9 +433,17 @@ AActor* UUEUtil::PickActorUnderCursor(APlayerController* PlayerController, float
 		return nullptr;
 	}
 
+#if ENGINE_MAJOR_VERSION > 4
+	FVector actorPos = traceResult.GetActor()->GetActorLocation();
+#else
 	FVector actorPos = traceResult.Actor->GetActorLocation();
+#endif
 	OutDistance = FVector::Distance(actorPos, traceResult.TraceStart);
+#if ENGINE_MAJOR_VERSION > 4
+	return traceResult.GetActor();
+#else
 	return traceResult.Actor.Get();
+#endif
 }
 
 

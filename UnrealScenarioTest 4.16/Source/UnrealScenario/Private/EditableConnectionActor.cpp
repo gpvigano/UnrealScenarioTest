@@ -10,7 +10,7 @@
 #include "TimerManager.h"
 #include "Components/PrimitiveComponent.h"
 #include "Engine/World.h" // GetWorld()
-#include "Runtime/Launch/Resources/Version.h" // ENGINE_MINOR_VERSION
+#include "Runtime/Launch/Resources/Version.h" // ENGINE_MAJOR_VERSION, ENGINE_MINOR_VERSION
 
 #include <algorithm>
 
@@ -739,7 +739,7 @@ AActor* AEditableConnectionActor::CreateSectionActor()
 		sectionPrim->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 		sectionPrim->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
 		sectionPrim->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Block);
-#if ENGINE_MINOR_VERSION > 16
+#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 16
 		sectionPrim->SetGenerateOverlapEvents(true);
 #else
 		sectionPrim->bGenerateOverlapEvents = true;
@@ -808,7 +808,7 @@ void AEditableConnectionActor::SetupAnchorHandleActor(AActor* actor)
 				//meshComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Visibility, ECollisionResponse::ECR_Block);
 				meshComponent->OnComponentBeginOverlap.AddDynamic(this, &AEditableConnectionActor::OnHandleOverlapBegin);
 				meshComponent->OnComponentEndOverlap.AddDynamic(this, &AEditableConnectionActor::OnHandleOverlapEnd);
-#if ENGINE_MINOR_VERSION > 16
+#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 16
 				meshComponent->SetGenerateOverlapEvents(true);
 #else
 				meshComponent->bGenerateOverlapEvents = true;
@@ -841,7 +841,7 @@ void AEditableConnectionActor::UpdateAnchorHandles()
 		{
 			AnchorHandles[i]->SetActorLocation(newLocation, false, nullptr,
 				// TODO: check correct UE4 version
-#if ENGINE_MINOR_VERSION > 19
+#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 19
 				ETeleportType::ResetPhysics
 #else
 				ETeleportType::TeleportPhysics
@@ -898,8 +898,13 @@ FVector AEditableConnectionActor::ComputeAnchorLocation(FVector HandleLocalPosit
 	}
 	FVector handleOffset = handleLocation - refLocation;
 	FVector handleAbsOffset(fabs(handleOffset.X), fabs(handleOffset.Y), fabs(handleOffset.Z));
+#if ENGINE_MAJOR_VERSION > 4
+	double maxCoord;
+#else
+	float maxCoord;
+#endif
 	// change only the coordinate with the maximum offset
-	float maxCoord = std::max(handleAbsOffset.X, handleAbsOffset.Y);
+	maxCoord = std::max(handleAbsOffset.X, handleAbsOffset.Y);
 	maxCoord = std::max(maxCoord, handleAbsOffset.Z);
 	if (maxCoord > 0)
 	{

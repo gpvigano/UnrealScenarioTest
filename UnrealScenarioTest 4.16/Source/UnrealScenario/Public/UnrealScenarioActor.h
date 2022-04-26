@@ -329,10 +329,6 @@ protected:
 
 	virtual void InitDigitalScenarioFramework();
 
-#if WITH_EDITOR
-	void OnSelectionChanged(UObject* Object);
-#endif
-
 	UFUNCTION()
 		void OnHit(UPrimitiveComponent* HitComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, FVector NormalImpulse, const FHitResult & Hit);
 

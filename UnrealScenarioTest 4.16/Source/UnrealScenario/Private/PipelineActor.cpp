@@ -10,7 +10,7 @@
 #include "TimerManager.h"
 #include "Components/PrimitiveComponent.h"
 #include "Engine/World.h" // GetWorld()
-#include "Runtime/Launch/Resources/Version.h" // ENGINE_MINOR_VERSION
+#include "Runtime/Launch/Resources/Version.h" // ENGINE_MAJOR_VERSION, ENGINE_MINOR_VERSION
 
 #include <algorithm>
 

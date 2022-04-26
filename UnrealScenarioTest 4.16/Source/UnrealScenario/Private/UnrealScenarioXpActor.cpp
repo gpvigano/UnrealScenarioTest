@@ -6,7 +6,7 @@
 #include "EntityStateComponent.h"
 
 #include "Misc/Paths.h" // FPaths
-#include "Runtime/Launch/Resources/Version.h" // ENGINE_MINOR_VERSION
+#include "Runtime/Launch/Resources/Version.h" // ENGINE_MAJOR_VERSION, ENGINE_MINOR_VERSION
 
 #include <discenfw/ve/VirtualEnvironmentAPI.h>
 #include <discenfw/ve/VeManager.h>
@@ -942,7 +942,7 @@ void AUnrealScenarioXpActor::InitCyberSystem()
 	using namespace discenfw::xp;
 	using namespace discenfw::ve;
 
-#if ENGINE_MINOR_VERSION > 20
+#if ENGINE_MAJOR_VERSION > 4 || ENGINE_MINOR_VERSION > 20
 	FString projectPath = FPaths::ProjectDir();
 #else
 	FString projectPath = FPaths::GameDir();
